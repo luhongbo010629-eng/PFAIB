@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "ASD_dataset_5.csv" --model-name "time_series_library.TimesNet" --model-hyper-params '{"batch_size": 64, "horizon": 0, "norm": true, "seq_len": 12, "anomaly_ratio": 0.5}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/TimesNet" --adapter "transformer_adapter"

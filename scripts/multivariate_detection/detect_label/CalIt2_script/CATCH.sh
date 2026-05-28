@@ -1,0 +1,19 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "CalIt2.csv" --model-name "catch.CATCH" --model-hyper-params '{"Mlr": 1e-05, "anomaly_ratio": 3, "auxi_lambda": 0.1, "batch_size": 128, "cf_dim": 4, "d_ff": 256, "d_model": 256, "dc_lambda": 0.1, "e_layers": 3, "head_dim": 32, "lr": 0.0001, "n_heads": 16, "num_epochs": 5, "patch_size": 16, "patch_stride": 8, "seq_len": 192}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/CATCH"
+
+--config-path
+"unfixed_detect_label_multi_config.json"
+--data-name-list
+"CalIt2.csv"
+--model-name
+"catch.CATCH"
+--model-hyper-params
+"{\"Mlr\": 1e-05, \"anomaly_ratio\": 3, \"auxi_lambda\": 0.1, \"batch_size\": 128, \"cf_dim\": 4, \"d_ff\": 256, \"d_model\": 256, \"dc_lambda\": 0.1, \"e_layers\": 3, \"head_dim\": 32, \"lr\": 0.0001, \"n_heads\": 16, \"num_epochs\": 10, \"patch_size\": 16, \"patch_stride\": 8, \"seq_len\": 192,\"bn_dims\":
+[4,8,16,24],\"k_experts\": 3,\"bn_loss_coef\": 0.001}"
+--gpus
+0
+--num-workers
+1
+--timeout
+60000
+--save-path
+"label/CATCH"

@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "synthetic_glo0.048.csv" --model-name "self_impl.TFAD" --model-hyper-params '{"batch_size": 512, "lr": 0.0001, "n_window": 12, "num_epochs": 10, "anomaly_ratio": 10.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/TFAD"
