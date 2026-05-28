@@ -58,6 +58,14 @@ The code was developed for Python 3.8+ and PyTorch-based execution. GPU executio
 
 ## Data Preparation
 
+The benchmark datasets used by this repository can be downloaded from Baidu Netdisk:
+
+- File: `PFAIB_dataset.zip`
+- Link: <https://pan.baidu.com/s/15vRQqb9pOGM6GgYnEgg1eA?pwd=0629>
+- Access code: `0629`
+
+After downloading, extract `PFAIB_dataset.zip` into the repository root. The extracted files should follow the structure below:
+
 Place anomaly-detection datasets under the following structure:
 
 ```text
